@@ -9,11 +9,11 @@ const auth = require('../middleware/auth');
 
 
 
-router.get('/',auth, todoCtrl.getAllTodo);
-router.post('/',auth, todoCtrl.createTodo);
-router.get('/:id',auth, todoCtrl.getOneTodo);
-router.put('/:id',auth, todoCtrl.modifyTodo);
-router.delete('/:id',auth, todoCtrl.deleteTodo);
+router.get('/', todoCtrl.getAllTodo);
+router.post('/', todoCtrl.createTodo);
+router.get('/:id', todoCtrl.getOneTodo);
+router.put('/:id', todoCtrl.modifyTodo);
+router.delete('/:id', todoCtrl.deleteTodo);
 
 
 

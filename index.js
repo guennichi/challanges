@@ -13,8 +13,8 @@ mongoose.connect('mongodb+srv://jimbob:NordinKhaled1*@cluster0-pme76.mongodb.net
   .catch(() => console.log('Connexion à MongoDB échouée !'));
 
 
-app.use('/api/todo', todoroutes);
-app.use('/api/user', userRoutes);
+app.use('/todo', todoroutes);
+app.use('/user', userRoutes);
 
 app.use(todoroutes,require('./routes/todo'));
 
